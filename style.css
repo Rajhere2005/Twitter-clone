@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --twitter-color: #50b7f5;
+    --twiter-background: #e6ecf0;
+}
+
+.sidebarOption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.sidebarOption .material-symbols-outlined,
+.fa-twitter {
+    padding: 20px;
+}
+
+.sidebarOption h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.sidebarOption:hover {
+    background-color: var(--twiter-background);
+    border-radius: 30px;
+    color: var(--twitter-color);
+    transition: color 100ms ease-out;
+}
+
+.sidebarOption.active {
+    color: var(--twitter-color);
+}
+
+.sidebar-tweet {
+    width: 100%;
+    background-color: var(--twitter-color);
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin: left auto;
+    margin: right auto;
+    padding: 0 10px;
+}
+
+.sidebar {
+    border-right: 1px solid var(--twiter-background);
+    flex: 0.2;
+    min-width: 250px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fa-twitter {
+    color: var(--twitter-color);
+    font-size: 30px;
+
+}
+
+.feed {
+    flex: 0.5;
+    border-right: 1px solid var(--twiter-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+
+
+.feed_header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid var(--twiter-background);
+    padding: 15px 20px;
+
+}
+
+.feed_header h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.feed::-webkit-scrollbar {
+    display: none;
+}
+
+.feed {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+
+.tweetbox_input img {
+    border-radius: 50%;
+    height: 50px;
+}
+
+.tweetBox {
+    padding-bottom: 10px;
+    border-bottom: 8px solid var(--twiter-background);
+    padding-right: 10p;
+}
+
+.tweetBox form {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweetbox_input {
+    display: flex;
+    padding: 20px;
+}
+
+.tweetbox_input input {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.tweetBox_tweetButton {
+    background-color: var(--twitter-color);
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: auto;
+
+}
+
+
+.post__avtar img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twiter-background);
+    padding-bottom: 10px;
+}
+
+.post_body img {
+    width: 450px;
+    object-fit: contain;
+    border-radius: 20px;
+
+
+}
+
+.post__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.post__headerSpecial .material-symbols-outlined{
+    font-size: 16px !important;
+    color: var(--twitter-color);
+    margin-right: 5px;
+}
+
+
+.post__headerSpecial {
+    font-weight: 600;
+    font-size: 16px;
+    color: gray;
+ }
+.post__headerText h3{
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.post__headerDescription{
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.post_body{
+    flex: 1;
+    padding: 10px;
+}
+.widget{
+    flex: 0.4;
+}
+.widget_input{
+    display: flex;
+    align-items: center;
+    background-color: var(--twiter-background);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+
+}
+
+.widget_input input{
+    border: none;
+    background-color: var(--twiter-background);
+    outline: none;
+}
+.bodyContainer .rightside{
+    width: 20%;
+    margin-left: 20px;
+    margin-top: 80px;
+    position: fixed;
+    right: -40px;
+}
+
+.groupsbox{
+    background-image: url(shop.jpg);
+    height: 270px;
+    width: 270px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.groupsbox .heading{
+    display: flex;
+    gap: 5px;
+    transform: translate(10px, 110px);
+    color: rgb(55, 52, 52);
+}
+.groupsbox .SubHeading{
+    font-size: small;
+    font-style: bold;
+    transform: translate(10px 115px);
+    color: black;
+
+}
+.groupsbox .SubHeading button{
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: none;
+    margin-top: 10px;
+    font-weight: bold;
+    display: flex;
+}
+
+
+
